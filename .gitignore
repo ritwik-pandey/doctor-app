@@ -1,0 +1,37 @@
+# 🔹 Node.js dependencies
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# 🔹 Environment Variables (Sensitive Data)
+.env
+.env.local
+.env.development
+.env.production
+
+# 🔹 Firebase Credentials (Keep It Secret!)
+serviceAccountKey.json
+firebase.json
+firebaseConfig.json
+
+# 🔹 Heroku Files (Auto-Generated)
+.DS_Store
+heroku/
+
+# 🔹 Logs & Cache
+logs/
+*.log
+*.gz
+debug.log
+cache/
+
+# 🔹 VS Code & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🔹 OS-Specific Files
+Thumbs.db
+.DS_Store

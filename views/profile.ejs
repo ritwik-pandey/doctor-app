@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page - MediConnect</title>
+    <link rel="stylesheet" href="/css/profile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+  <body>
+    
+
+    <!-- Main Content Section -->
+    <div class="main_content">
+      <!-- Page Title -->
+      <h1 class="page_title">User Profile</h1>
+
+     
+      <div class="profile_form_container">
+       
+        
+          
+          <div class="form_group">
+            <label for="fullName">Full Name:</label>
+            <h2><%= username %></h2>
+          </div>
+
+         
+          <div class="form_group">
+            <label for="email">Email Address:</label>
+            <h2><%=email%></h2>
+          </div>
+
+         
+          <div class="form_group">
+            <label for="phoneNumber">Phone Number:</label>
+            <h2>
+                <%=number%>
+            </h2>
+          </div>
+
+          
+          
+        
+      </div>
+    </div>
+
+  </body>
+</html>

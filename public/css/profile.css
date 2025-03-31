@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d9f2ff; /* Light blue background matching homepage */
+  }
+  
+  /* Top Navigation Bar */
+  .top_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark gray header color */
+    padding: 10px 20px;
+  }
+  
+  #logo {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  .top_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .top_nav ul li {
+    margin: 0 10px;
+  }
+  
+  .top_nav ul li a {
+    text-decoration: none;
+    color: white; /* White text for contrast */
+    font-weight: bold;
+  }
+  
+  .top_nav ul li a:hover {
+    color: #d1ecf1; /* Light blue hover effect */
+  }
+  
+  /* Main Content Section */
+  .main_content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Page Title */
+  .page_title {
+    text-align: center;
+    color: #333; /* Dark gray title matching header */
+  }
+  
+  /* Profile Form Container */
+  .profile_form_container {
+    background-color: white; /* White form background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form_group {
+    margin-bottom: 15px; /* Spacing between fields */
+  }
+  
+  .form_group label {
+    font-weight: bold;
+  }
+  
+  .form_group input,
+  .form_group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  
+  textarea {
+     resize:none;}
+  
+  /* Improved Submit Button Styles */
+  .submit_button {
+      background-color: #007bff; /* Blue button color matching theme */
+      color: white; /* White text for contrast */
+      border: none; /* Remove default border */
+      padding: 12px; /* Add padding for size */
+      border-radius: 25px; /* Rounded corners for a pill shape */
+      font-size: medium; /* Medium font size for readability */
+      cursor: pointer; /* Pointer cursor on hover */
+      transition: all .3s ease-in-out; /* Smooth transition effect */
+  }
+  
+  .submit_button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+      transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your personal doctor</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    
+
+    <form action="/login" method="post">
+    <div id="box">
+        
+        <img src="/img/login/23_1.png">
+        <% if (error) { %>
+            <p style="color: red;"><%= error %></p> 
+        <% } %>
+        
+        <br>
+        <div>
+            <b>Email</b><br>
+            <input type="email" id="name" name="login_email" autocomplete="off">
+        </div>
+        <br>
+        <div>
+            <b>Password</b><br>
+            <input type="password" placeholder=" At least 6 characters"id="name" name="login_password"><br>
+        </div>
+        
+        <br>
+        
+        <br>
+        <div> 
+            <input type="submit" id="continue" value="Continue">
+        </div>
+    </div>
+</form>
+    <script src="/js/signup"></script>
+</body>
+</html>

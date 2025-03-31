@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your personal doctor</title>
+    <link rel="stylesheet" type="text/css" href="/css/1_homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="cfcc1b7e-d47d-4889-a43e-5b96240c6d2e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  </head>
+  <body>
+    <nav class="top_nav ">
+      <img id="logo" src="img/homepage_img/1_1.png">
+        <ul>
+          <li><a href="/aboutus">  &nbsp;About Us&nbsp; </a></li>
+          <li><a href="/faq">  &nbsp;FAQ &nbsp;</a></li>
+          <li><a href="/contactus">  &nbsp;Contact Us &nbsp;</a></li>
+          <li><a href="/privacy">  &nbsp;Privacy Policy &nbsp;</a></li>
+          
+            <% if (!username) { %>
+              
+              <li><a href="/signup" class="signup">  &nbsp;Sign Up&nbsp; </a></li>
+              <li><a href="/login" class="login">  &nbsp;Login&nbsp; </a></li>
+            <% } else { %>
+              <li><a href="/profile">  &nbsp;Profile &nbsp;</a></li>
+              <li><a href="/logout" class="navbar-logout">Logout</a></li>
+            <% } %>
+        
+          
+        </ul>
+      </nav>                                     
+    <div class="main_box">
+      
+      <% if(username){ %>
+      <h1 class="h1_username">Hello <%= username %>!</h1>
+      <%}%>
+          
+      <div class="temp">
+
+
+      <img class="icon" id="one" src="/img/homepage_img/1_12.avif">
+      <img class="icon" id="two"src="/img/homepage_img/1_6.jpg">
+      <img class="icon" id="three"src="img/homepage_img/1_11.webp">
+      <img class="icon" id="four"src="img/homepage_img/1_5.jfif">
+      <img class="icon" id="five"src="/img/homepage_img/1_8.jpg">
+      <img class="icon" id="six"src="/img/homepage_img/1_3.jpg">
+      <img class="icon" id="seven"src="/img/homepage_img/1_4.jpg">
+      <img class="icon" id="eight"src="/img/homepage_img/1_7.webp">
+      <input type="checkbox" id="check" />
+      <div class="btn_one">
+        <label for="check">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+      </div>
+
+      <div class="sidebar_menu">
+        <div class="logo">
+          <a href="#">INFORMATION</a>
+        </div>
+
+        <div class="btn_two">
+          <label for="check">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-info"></i>
+              <a href="/en">Encyclopedia</a>
+            </li>
+            
+            <li>
+              <i class="fa-solid fa-weight-scale"></i>
+              <a href="/bmi">BMI Calculator</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-calculator"></i>
+              <a href="/heart">Heart Risk Calculator</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-weight-scale"></i>
+              <a href="/lung">Lung Cancer Predictor</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-virus-covid"></i>
+              <a href="/quiz">Health Quiz</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="/doctor">Find A Doctor</a>
+            </li>
+            
+            <li>
+              <i class="fa-solid fa-briefcase-medical"></i>
+              <a href="/firstaid">First Aid Guide</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-comments"></i>
+              <a href="/fitness">Fitness Guide</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-notes-medical"></i>
+                <a href="/mental">Mental Health Guide</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
