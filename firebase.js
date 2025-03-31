@@ -4,7 +4,9 @@ const admin = require("firebase-admin");
 const serviceAccount = {
     type: process.env.type,
   project_id: process.env.project_id,
-  private_key_id: process.env.private_key_id.replace(/\\n/g, '\n'),
+  private_key_id: process.env.private_key_id
+  ? process.env.private_key_id.replace(/\\n/gm, "\n")
+  : undefined,
   private_key: process.env.private_key,
   client_email: process.env.client_email,
   client_id: process.env.client_id,
@@ -14,6 +16,8 @@ const serviceAccount = {
   client_x509_cert_url: process.env.client_x509_cert_url,
   universe_domain: process.env.universe_domain
   };
+
+ 
   
   // Initialize Firebase Admin SDK if not already initialized
   if (!admin.apps.length) {
