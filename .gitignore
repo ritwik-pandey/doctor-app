@@ -15,9 +15,6 @@ serviceAccountKey.json
 firebase.json
 firebaseConfig.json
 
-# 🔹 Heroku Files (Auto-Generated)
-.DS_Store
-heroku/
 
 # 🔹 Logs & Cache
 logs/
@@ -35,3 +32,5 @@ cache/
 # 🔹 OS-Specific Files
 Thumbs.db
 .DS_Store
+
+config.js

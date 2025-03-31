@@ -1,8 +1,10 @@
 require("dotenv").config();
+require('dotenv').config();
 const express = require("express");
 const app = express();
 const path = require("path");
 const cookieParser = require("cookie-parser");
+const admin = require("firebase-admin");
 
 // Use cookie-parser middleware
 
